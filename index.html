@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>よくある見出しを自動生成</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Google Fontsの英語と日本語を組み合わせた「よくある見出し」を自動生成し、HTML/CSSをコピーできるツールです。WEBデザイン等でご使用ください。">
+    <meta property="og:title" content="よくある見出しを自動生成">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://d64s.com/work/headingmaker/index.html">
+    <meta property="og:image" content="https://d64s.com/work/headingmaker/img/ogp.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="よくある見出しを自動生成">
+    <meta property="og:description" content="Google Fontsの英語と日本語を組み合わせた「よくある見出し」を自動生成・HTML/CSSをコピーできるツールです。">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" sizes="16x16" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/muuri.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+        <div class="header-inner">
+          <h1>よくある見出しを自動生成</h1>
+          <div class="header-input">
+            <label class="radio">
+              <input type="radio" name="fav" value="" checked>
+              <span>すべて</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="fav" value="fav">
+              <span>お気に入り</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <main>
+      <div class="wrapper">
+        <div class="grid muuri" id="js-grid"></div>
+      </div>
+      <div class="modal-wrapper" id="js-modal-wrapper">
+        <div class="modal" id="js-modal"></div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 Daisuke Sumida</small></p>
+      </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- //script -->
+  </body>
+</html>
